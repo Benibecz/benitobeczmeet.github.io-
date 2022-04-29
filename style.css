@@ -1,0 +1,263 @@
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  transform: scale(0.96);
+}
+
+.margen {
+  margin: 0 100px;
+}
+
+/*//////////CONTAINER1//////////*/
+
+.container1 {
+  display: grid;
+  place-content: center;
+  padding: 60px;
+}
+/* .logo {
+} */
+
+/*//////////CONTAINER2//////////*/
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*place-content: center;*/
+  place-items: center;
+}
+.picleft {
+  justify-self: left;
+}
+
+.text {
+  display: grid;
+  place-items: center;
+  gap: 35px;
+}
+
+.text h1 {
+  color: #222831;
+  width: 300px;
+  font-size: 50px;
+  font-weight: 900;
+}
+.text p {
+  color: #686d76;
+  width: 450px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 15px;
+}
+.text .download {
+  font-size: 13px;
+  font-weight: bold;
+  background: #38a3a5;
+}
+
+.text span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #4fd3c4;
+}
+
+.text .whatisthis {
+  font-size: 13px;
+  font-weight: bold;
+  background: #6a5495;
+}
+
+.picright {
+  justify-self: right;
+}
+
+/*//////////CONTAINER3//////////*/
+
+.container3 {
+  margin: 80px 0 50px 0;
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+
+.container3 .line {
+  margin: 0 auto;
+  width: 0.5px;
+  height: 85px;
+  /*background: pink;*/
+  border: none;
+  border-left: 1px #d1d1d1 solid;
+}
+
+.container3 .main01 {
+  padding: 1px 1px;
+  border-radius: 20px;
+}
+
+.container3 .p01 {
+  margin: 0 auto;
+  width: 38px;
+  font-size: 13px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  border: 1px #d1d1d1 solid;
+}
+
+/*//////////CONTAINER4//////////*/
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-column-gap: 30px;
+  place-content: center;
+  place-items: center;
+}
+.container4 img {
+  width: 100%;
+  border-radius: 10px;
+}
+/*
+.container4 .imagess{
+  width: 200px;
+  border-radius: 10px;
+
+}*/
+
+/*//////////CONTAINER5//////////*/
+
+.container5 {
+  display: grid;
+  place-items: center;
+  margin: 60px auto;
+}
+.container5 h5 {
+  color: #2f86a6;
+  letter-spacing: 2px;
+  width: 300px;
+  margin: 10px auto;
+  font-weight: 900;
+}
+.container5 h1 {
+  font-weight: 900;
+  color: #222831;
+  margin: 10px auto;
+  width: 325px;
+}
+.container5 p {
+  color: #686d76;
+  margin: 10px auto;
+  width: 460px;
+}
+
+/*//////////CONTAINER6//////////*/
+
+.container6 {
+  margin: 80px 0 -20px 0;
+  /*overflow: visible;
+  background: pink;*/
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+
+.container6 .line {
+  margin: 0 auto;
+  width: 0.5px;
+  height: 85px;
+  /*background: pink;*/
+  border: none;
+  border-left: 1px #d1d1d1 solid;
+}
+
+.container6 .main01 {
+  overflow: visible;
+  z-index: 2;
+  background: white;
+  padding: 1px 1px;
+  border-radius: 20px;
+}
+
+.container6 .p01 {
+  margin: 0 auto;
+  width: 38px;
+  font-size: 13px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  border: 1px #d1d1d1 solid;
+}
+
+/*//////////CONTAINER7//////////*/
+.container7 {
+  /*padding: 20em;*/
+  height: 300px;
+  background-image: url(../images/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+
+  border: 1px pink solid;
+  position: relative;
+}
+
+/* #2F86A6; */
+
+.container7 .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 134, 166, 0.8);
+}
+.container7 .texto {
+  color: white;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* background-color: rgb(47 134 166 0.8); */
+  /* opacity: 0.80; */
+  /*background-color: rgba(0,0,0,0.5);*/
+  /*z-index: 2;*/
+}
+
+.overlay h1 {
+  font-weight: 700;
+  text-align: left;
+  width: 300px;
+}
+
+.overlay p {
+  text-align: left;
+  width: 300px;
+  font-size: 15px;
+}
+/* .overlay .boton {
+} */
+.overlay .purple-bottom {
+  /*overflow: visible;*/
+  /*z-index: 3;*/
+  font-size: 13px;
+  font-weight: bold;
+  background: #6a5495;
+  opacity: none;
+}
