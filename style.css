@@ -226,10 +226,12 @@ a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(47, 134, 166, 0.8);
+  background-color: rgba(47, 134, 166, 0.7);
 }
 .container7 .texto {
   color: white;
+  height: 100%;
+
   display: grid;
   place-content: center;
   place-items: center;
@@ -251,8 +253,7 @@ a:hover {
   width: 300px;
   font-size: 15px;
 }
-/* .overlay .boton {
-} */
+
 .overlay .purple-bottom {
   /*overflow: visible;*/
   /*z-index: 3;*/
