@@ -44,26 +44,28 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   /*place-content: center;*/
   place-items: center;
+  align-items: center;
+  gap: 2rem;
 }
 .picleft {
   justify-self: left;
 }
 
-.text {
-  display: grid;
-  place-items: center;
+.container2 .text {
+  display: flex;
+  flex-direction: column;
   gap: 35px;
 }
 
 .text h1 {
   color: #222831;
-  width: 300px;
+
   font-size: 50px;
   font-weight: 900;
 }
 .text p {
   color: #686d76;
-  width: 450px;
+  margin: 0 auto;
 }
 
 .buttons {
@@ -133,6 +135,7 @@ a:hover {
   grid-column-gap: 30px;
   place-content: center;
   place-items: center;
+  margin-bottom: 60px;
 }
 .container4 img {
   width: 100%;
@@ -149,26 +152,25 @@ a:hover {
 
 .container5 {
   display: grid;
+  grid-template-columns: 529px;
   place-items: center;
-  margin: 60px auto;
+  place-content: center;
+  gap: 35px;
 }
 .container5 h5 {
   color: #2f86a6;
   letter-spacing: 2px;
-  width: 300px;
-  margin: 10px auto;
+  margin: 0 auto;
   font-weight: 900;
 }
 .container5 h1 {
   font-weight: 900;
   color: #222831;
-  margin: 10px auto;
-  width: 325px;
+  margin: 0 auto;
 }
 .container5 p {
   color: #686d76;
-  margin: 10px auto;
-  width: 460px;
+  margin: 0 auto;
 }
 
 /*//////////CONTAINER6//////////*/
@@ -273,13 +275,28 @@ a:hover {
 
   .container2 {
     grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
   }
   .picleft {
     justify-self: center;
     margin-bottom: 2rem;
   }
+  .picleft img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .buttons {
+    grid-template-columns: 6fr 4fr;
+    /* place-items: center; */
+    place-items: center;
+    /* font-size: 1rem; */
+  }
   .container4 {
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container5 {
+    grid-template-columns: 1fr;
   }
 
   .container7 {
