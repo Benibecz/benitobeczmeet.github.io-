@@ -21,13 +21,16 @@ a:hover {
 }
 
 .margen {
-  margin: 0 100px;
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*//////////CONTAINER1//////////*/
 
 .container1 {
   display: grid;
+
   place-content: center;
   padding: 60px;
 }
@@ -93,7 +96,7 @@ a:hover {
 /*//////////CONTAINER3//////////*/
 
 .container3 {
-  margin: 80px 0 50px 0;
+  margin: 60px 0 50px 0;
   display: grid;
   place-content: center;
   align-items: center;
@@ -171,7 +174,7 @@ a:hover {
 /*//////////CONTAINER6//////////*/
 
 .container6 {
-  margin: 80px 0 -20px 0;
+  margin: 60px 0 -20px 0;
   /*overflow: visible;
   background: pink;*/
   display: grid;
@@ -262,3 +265,33 @@ a:hover {
   background: #6a5495;
   opacity: none;
 }
+
+@media (max-width: 768px) {
+  .picright img {
+    display: none;
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+  .picleft {
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+  .container4 {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .container7 {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  .container7 .texto {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .texto h1 {
+    font-size: 1.75rem !important;
+    width: auto;
+  }
+} ;
