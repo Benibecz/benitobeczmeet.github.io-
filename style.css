@@ -139,6 +139,7 @@ a:hover {
 }
 .container4 img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 /*
@@ -213,14 +214,16 @@ a:hover {
 /*//////////CONTAINER7//////////*/
 .container7 {
   /*padding: 20em;*/
-  height: 300px;
+
+  display: grid;
+
+  position: relative;
+}
+.container7 .bg-image {
+  height: 20rem;
   background-image: url(../images/image-footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-
-  border: 1px pink solid;
-  position: relative;
 }
 
 /* #2F86A6; */
@@ -268,7 +271,7 @@ a:hover {
   opacity: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1095px) {
   .picright img {
     display: none;
   }
@@ -301,7 +304,7 @@ a:hover {
 
   .container7 {
     margin: 0;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
   }
   .container7 .texto {
     grid-template-columns: 1fr;
